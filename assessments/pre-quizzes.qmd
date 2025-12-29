@@ -1,0 +1,31 @@
+# Pre-Reading Quizzes {.unnumbered}
+
+Pre-reading quizzes help you identify what you should focus on in each chapter.
+
+## How to Use
+
+- Complete BEFORE reading the chapter
+- Be honest - these help identify knowledge gaps
+- Review answers to understand prerequisites
+- Retake after reading chapter to see improvement
+
+## Sample Quiz Format
+
+::: {.callout-note collapse="true"}
+## Quiz 1: Introduction (Sample)
+
+**Question 1**: What is [key concept]?
+
+a) Option A
+b) Option B (Correct)
+c) Option C
+d) Option D
+
+**Answer**: B
+
+**Explanation**: Brief explanation of why B is correct.
+:::
+
+---
+
+*(Add your pre-quizzes for each chapter here)*

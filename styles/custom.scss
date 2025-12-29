@@ -1,0 +1,135 @@
+/*-- scss:defaults --*/
+
+// Fonts
+$font-family-sans-serif: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-monospace: "Source Code Pro", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+// Colors - Poltek SSN inspired
+$primary: #1a5f7a;
+$secondary: #57837b;
+$success: #28a745;
+$info: #17a2b8;
+$warning: #ffc107;
+$danger: #dc3545;
+
+// Link colors
+$link-color: $primary;
+
+/*-- scss:rules --*/
+
+// Custom styles for the crypto ebook
+
+// Learning objectives box
+.learning-objectives {
+  background-color: rgba($primary, 0.1);
+  border-left: 4px solid $primary;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 0 4px 4px 0;
+}
+
+// Code blocks
+pre {
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+}
+
+// Depth indicators
+.depth-indicator {
+  color: #ffc107;
+  font-size: 0.9em;
+}
+
+// Security warning boxes
+.security-warning {
+  background-color: rgba($danger, 0.1);
+  border-left: 4px solid $danger;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+// Checkpoint boxes
+.checkpoint {
+  background-color: rgba($info, 0.1);
+  border: 2px dashed $info;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 4px;
+}
+
+// Self-check questions
+.self-check summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: $primary;
+}
+
+// Chapter parts styling
+.part-header {
+  background: linear-gradient(135deg, $primary, $secondary);
+  color: white;
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 8px;
+}
+
+// Tables
+.table {
+  font-size: 0.95rem;
+}
+
+.table th {
+  background-color: rgba($primary, 0.1);
+}
+
+// Inline code
+code {
+  color: $primary;
+  background-color: rgba($primary, 0.05);
+  padding: 0.125rem 0.25rem;
+  border-radius: 3px;
+}
+
+// Figures
+figure {
+  margin: 1.5rem 0;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  color: #6c757d;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+// Sidebar TOC
+.sidebar nav[role=doc-toc] {
+  font-size: 0.9rem;
+}
+
+// Print styles
+@media print {
+  .callout {
+    break-inside: avoid;
+  }
+
+  pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+}
+
+// Math equations
+.math {
+  font-size: 1.1em;
+}
+
+// Algorithm pseudocode
+.algorithm {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  padding: 1rem;
+  margin: 1rem 0;
+  font-family: $font-family-monospace;
+}

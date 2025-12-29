@@ -1,0 +1,129 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "Your Course Title"
+  subtitle: "Your Course Subtitle"
+  author:
+    - name: "Author Name(s)"
+      affiliation: "Your Institution"
+  date: "2026"
+  date-format: "YYYY"
+
+  reader-mode: true
+  page-navigation: true
+  search: true
+
+  sidebar:
+    style: docked
+    background: light
+    collapse-level: 2
+
+  page-footer:
+    left: |
+      Your Department/Program
+    right: |
+      Your Course Code and Name
+
+  chapters:
+    - index.qmd
+    - preface.qmd
+    - how-to-use.qmd
+
+    # Example structure - customize to your needs
+    - part: "PART I: Topic Area 1"
+      chapters:
+        - chapters/01-sample-chapter.qmd
+        # Add more chapters here
+
+    - part: "Praktikum / Labs"
+      chapters:
+        - labs/index.qmd
+        - labs/lab01-sample-lab.qmd
+        # Add more labs here
+
+    - part: "Asesmen / Assessments"
+      chapters:
+        - assessments/index.qmd
+        - assessments/pre-quizzes.qmd
+        - assessments/problem-sets.qmd
+        - assessments/quiz-bank.qmd
+        - assessments/project-guidelines.qmd
+
+    - part: "Lampiran / Appendices"
+      chapters:
+        - appendices/index.qmd
+        # Add reference materials here
+
+    - references.qmd
+
+format:
+  html:
+    theme:
+      light: [cosmo, styles/custom.scss]
+      dark: darkly
+    code-fold: true
+    code-tools: true
+    code-copy: true
+    code-overflow: wrap
+    code-line-numbers: true
+    toc: true
+    toc-depth: 3
+    toc-expand: 2
+    number-sections: false
+    number-depth: 3
+    highlight-style: github
+    fig-responsive: true
+    fig-align: center
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: true
+    mermaid:
+      theme: default
+      version: "10.9.1"
+
+  pdf:
+    documentclass: scrbook
+    papersize: a4
+    fontsize: 11pt
+    toc: true
+    toc-depth: 3
+    number-sections: false
+    colorlinks: true
+    keep-tex: false
+    include-in-header:
+      - latex/preamble.tex
+    mermaid:
+      # Windows: Use full path to Chrome
+      chrome-path: "C:/Program Files/Google/Chrome/Application/chrome.exe"
+      # macOS: chrome-path: "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+      # Linux: chrome-path: "/usr/bin/chromium-browser"
+
+  epub:
+    toc: true
+    number-sections: false
+    epub-cover-image: images/cover.png
+
+execute:
+  echo: true
+  warning: false
+  message: false
+  freeze: auto
+
+bibliography: references.bib
+csl: styles/ieee.csl
+
+# Change 'id' to 'en' for English
+lang: id
+
+crossref:
+  # Indonesian terms (change to English if needed)
+  fig-title: "Gambar"
+  tbl-title: "Tabel"
+  eq-prefix: "Persamaan"
+  sec-prefix: "Bagian"
+  ref-hyperlink: true
+
+callout-appearance: simple
+callout-icon: true

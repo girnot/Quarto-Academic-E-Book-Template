@@ -1,0 +1,76 @@
+# Laboratory Exercises {.unnumbered}
+
+## Overview
+
+The laboratory exercises provide hands-on experience with the concepts covered in the theory chapters. Each lab is designed to reinforce learning through practical implementation.
+
+## Lab Structure
+
+Every lab includes:
+
+- **Clear objectives** aligned with course learning outcomes
+- **Step-by-step instructions** with checkpoints
+- **Starter code** to guide implementation
+- **Test cases** to verify correctness
+- **Optional challenges** for advanced learners
+- **Troubleshooting guides** for common issues
+
+## How to Use Labs
+
+::: {.callout-tip}
+## Lab Workflow
+
+1. **Prepare**: Complete prerequisite chapters and setup
+2. **Read**: Review entire lab before starting
+3. **Implement**: Follow steps, test at checkpoints
+4. **Verify**: Ensure all tests pass
+5. **Challenge**: Try optional extensions
+6. **Submit**: Follow submission guidelines
+:::
+
+## Lab List
+
+### Lab 1: Getting Started with Python
+- **Focus**: Development environment, basic functions
+- **Difficulty**: ⭐ (Beginner)
+- **Time**: 1-2 hours
+
+*(Add more labs as you create them)*
+
+## Grading Criteria
+
+All labs are evaluated on:
+
+| Criteria | Weight | Description |
+|----------|--------|-------------|
+| **Correctness** | 50% | Does it work as specified? |
+| **Code Quality** | 20% | Clean, readable, documented |
+| **Testing** | 15% | Proper test implementation |
+| **Documentation** | 10% | Comments and explanations |
+| **Submission** | 5% | On time, proper format |
+
+## Getting Help
+
+If you're stuck:
+
+1. **Check troubleshooting section** in the lab
+2. **Review related chapter** for theory
+3. **Test incrementally** to isolate issues
+4. **Use office hours** for guidance
+5. **Ask in discussion forum** for peer help
+
+## Tips for Success
+
+::: {.callout-note}
+## Best Practices
+
+- **Start early**: Don't wait until the deadline
+- **Read carefully**: Follow instructions precisely
+- **Test frequently**: Verify at each checkpoint
+- **Document well**: Future you will thank present you
+- **Experiment**: Try variations to deepen understanding
+:::
+
+---
+
+**Ready to start?** Begin with [Lab 1](lab01-sample-lab.qmd)!

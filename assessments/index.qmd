@@ -1,0 +1,80 @@
+# Assessments {.unnumbered}
+
+## Overview
+
+This section contains various assessment materials to help you evaluate your learning and prepare for exams.
+
+## Assessment Types
+
+### Pre-Reading Quizzes
+- **Purpose**: Check prerequisite knowledge before class
+- **Format**: Multiple choice, short answer
+- **Weight**: 5% of final grade
+- **Timing**: Before each class session
+
+### Problem Sets
+- **Purpose**: Apply concepts to solve problems
+- **Format**: Written problems, calculations, short code
+- **Weight**: 15% of final grade
+- **Timing**: Weekly
+
+### Quiz Bank
+- **Purpose**: Self-assessment and exam preparation
+- **Format**: Various question types with answers
+- **Weight**: Not graded (practice only)
+- **Timing**: Available anytime
+
+### Projects
+- **Purpose**: Comprehensive application of course material
+- **Format**: Implementation + report/presentation
+- **Weight**: 20% of final grade
+- **Timing**: Throughout semester
+
+## How to Use Assessments
+
+::: {.callout-tip}
+## Assessment Strategy
+
+1. **Pre-Quizzes**: Take honestly to identify gaps
+2. **Problem Sets**: Attempt independently first
+3. **Quiz Bank**: Use for review and practice
+4. **Projects**: Start early, work incrementally
+:::
+
+## Grading Philosophy
+
+We use **outcome-based assessment**:
+
+- Assessments measure specific learning outcomes
+- Multiple opportunities to demonstrate mastery
+- Feedback focuses on improvement
+- Emphasis on understanding, not memorization
+
+## Academic Integrity
+
+::: {.callout-important}
+## Important Reminders
+
+- Complete work independently unless collaboration is specified
+- Cite all sources and references
+- Do not share solutions to graded assignments
+- Ask instructor if uncertain about policies
+:::
+
+## Getting Feedback
+
+After completing assessments:
+
+- Review correct answers and explanations
+- Identify patterns in mistakes
+- Seek clarification during office hours
+- Use feedback to improve future performance
+
+---
+
+**Explore the assessment materials:**
+
+- [Pre-Reading Quizzes](pre-quizzes.qmd)
+- [Problem Sets](problem-sets.qmd)
+- [Quiz Bank](quiz-bank.qmd)
+- [Project Guidelines](project-guidelines.qmd)

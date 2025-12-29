@@ -1,0 +1,126 @@
+# Welcome {.unnumbered}
+
+::: {.hero-banner}
+## Your Course Title
+
+**Interactive E-Book for [Your Course Code]**
+
+[Your Institution Name]
+:::
+
+## 📚 About This E-Book
+
+This interactive e-book is designed to support your learning journey in **[Your Course Name]**. It combines:
+
+- **Comprehensive theory chapters** with clear explanations
+- **Hands-on laboratory exercises** for practical skills
+- **Interactive code examples** you can run and modify
+- **Self-assessment tools** to check your understanding
+- **OBE-aligned curriculum** matching course learning outcomes
+
+## 🎯 Learning Outcomes
+
+By the end of this course, you will be able to:
+
+1. **[Learning Outcome 1]** - Brief description
+2. **[Learning Outcome 2]** - Brief description
+3. **[Learning Outcome 3]** - Brief description
+4. **[Learning Outcome 4]** - Brief description
+5. **[Learning Outcome 5]** - Brief description
+
+## 🗂️ Course Structure
+
+This e-book is organized into several parts:
+
+### Part I: [Topic Area 1]
+Introduction to fundamental concepts and theories.
+
+### Part II: [Topic Area 2]
+*(Add more parts as needed)*
+
+### Praktikum / Labs
+Hands-on exercises to reinforce theoretical concepts through practical implementation.
+
+### Asesmen / Assessments
+- Pre-reading quizzes
+- Problem sets
+- Quiz bank for self-assessment
+- Project guidelines
+
+### Lampiran / Appendices
+Reference materials, cheatsheets, and glossary.
+
+## 📖 How to Use This E-Book
+
+::: {.callout-tip}
+## First Time Here?
+
+Start with the **[How to Use This E-Book](how-to-use.qmd)** guide to understand:
+- Navigation tips
+- How to run code examples
+- Study strategies
+- Assessment guidelines
+:::
+
+## 🚀 Getting Started
+
+1. **Read the [Preface](preface.qmd)** to understand the course philosophy
+2. **Review [How to Use](how-to-use.qmd)** for navigation tips
+3. **Start with Chapter 1** and work through sequentially
+4. **Complete labs** after finishing related theory chapters
+5. **Use assessments** to check your understanding
+
+## 💻 Technical Requirements
+
+To get the most out of this e-book:
+
+- **Modern web browser** (Chrome, Firefox, Safari, Edge)
+- **Python 3.10+** for running code examples
+- **Text editor or IDE** for labs (VS Code, PyCharm, etc.)
+- **[Additional requirements specific to your course]**
+
+## 👥 Course Information
+
+- **Course Code**: [Your Course Code]
+- **Credit Hours**: [X SKS / Credits]
+- **Semester**: [Odd/Even, Academic Year]
+- **Instructor**: [Instructor Name(s)]
+
+## 📞 Getting Help
+
+::: {.callout-note collapse="true"}
+## Need Assistance?
+
+- **Office Hours**: [Schedule and location]
+- **Email**: [instructor@institution.edu]
+- **Discussion Forum**: [Link if available]
+- **Issues/Bugs**: Report technical issues on [GitHub](https://github.com/your-repo)
+:::
+
+---
+
+::: {.callout-important}
+## 🎓 Academic Integrity
+
+This material is for educational purposes. Follow your institution's academic integrity policy:
+- Complete assignments independently unless collaboration is specified
+- Cite all sources appropriately
+- Do not share solutions to graded assignments
+:::
+
+---
+
+**Version**: 1.0
+**Last Updated**: [Date]
+**License**: [Your chosen license, e.g., CC BY-SA 4.0]
+
+---
+
+::: {.grid}
+::: {.g-col-6}
+[![](https://img.shields.io/badge/Built%20with-Quarto-blue)](https://quarto.org)
+:::
+::: {.g-col-6}
+[![](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey)](http://creativecommons.org/licenses/by-sa/4.0/)
+:::
+:::

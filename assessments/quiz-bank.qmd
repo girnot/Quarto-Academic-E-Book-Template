@@ -1,0 +1,26 @@
+# Quiz Bank {.unnumbered}
+
+Practice questions for self-assessment and exam preparation.
+
+## How to Use
+
+- Use for review before exams
+- Test yourself without looking at answers
+- Review explanations for missed questions
+- Track which topics need more study
+
+## Sample Questions
+
+::: {.callout-note collapse="true"}
+## Question 1
+
+**Topic**: Introduction
+
+[Question text]
+
+**Answer**: [Answer with explanation]
+:::
+
+---
+
+*(Add your quiz bank questions here)*

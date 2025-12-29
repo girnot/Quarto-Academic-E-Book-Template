@@ -1,0 +1,591 @@
+# Lab 1: Getting Started with Python {#lab-01}
+
+## Overview
+
+| **Aspect** | **Details** |
+|------------|-------------|
+| **Duration** | 1-2 hours |
+| **Difficulty** | ⭐ (Beginner) |
+| **Prerequisites** | Chapter 1, Python installed |
+| **CLO Alignment** | CLO-1, CLO-2 |
+| **Submission** | Python script + output file |
+| **Due Date** | Week 2 |
+
+---
+
+## Learning Objectives
+
+By completing this lab, you will be able to:
+
+1. **Set up** a Python development environment
+2. **Write** basic Python functions with proper documentation
+3. **Use** external libraries for data visualization
+4. **Debug** common errors in Python code
+
+---
+
+## Background
+
+### Quick Theory Review
+
+This lab reinforces concepts from Chapter 1:
+
+**Functions**:
+
+Python functions encapsulate reusable code. They should have clear names, type hints, and docstrings.
+
+**Data Visualization**:
+
+Matplotlib is the most common Python visualization library. It provides flexible plotting capabilities.
+
+### Real-World Application
+
+These skills are used daily by:
+- Data scientists analyzing datasets
+- Software engineers building applications
+- Researchers presenting findings
+- Students completing course projects
+
+---
+
+## Pre-Lab Preparation
+
+::: {.callout-important}
+## Before You Begin
+
+Complete these setup steps before starting the lab:
+
+### Software Requirements
+
+- [ ] Python 3.10+ installed and working
+- [ ] pip package manager available
+- [ ] Text editor or IDE (VS Code, PyCharm, etc.)
+- [ ] Terminal/command prompt access
+
+### Installation
+
+```bash
+# Install required packages
+pip install numpy matplotlib
+```
+
+### Verify Installation
+
+```python
+# Save as test_setup.py and run
+import sys
+import numpy as np
+import matplotlib.pyplot as plt
+
+print(f"Python version: {sys.version}")
+print(f"NumPy version: {np.__version__}")
+print(f"Matplotlib version: {plt.matplotlib.__version__}")
+print("\n✓ All packages installed successfully!")
+```
+
+**Expected output**:
+```
+Python version: 3.10.x ...
+NumPy version: 1.26.x
+Matplotlib version: 3.8.x
+
+✓ All packages installed successfully!
+```
+
+### Materials Needed
+
+- [ ] Starter code (provided below)
+- [ ] Lab worksheet (this document)
+
+**Estimated setup time**: 10-15 minutes
+:::
+
+---
+
+## Part 1: Basic Functions
+
+### Step 1.1: Create Project Structure
+
+Create a new file called `lab01_yourname.py` and add the file header:
+
+```python
+"""
+Lab 1: Getting Started with Python
+Course: [Your Course Code]
+Student: [Your Name]
+Date: [Today's Date]
+
+This lab demonstrates basic Python functions and visualization.
+"""
+
+import numpy as np
+import matplotlib.pyplot as plt
+```
+
+### Step 1.2: Implement Calculator Functions
+
+Add these functions to your file:
+
+```python
+def add(a: float, b: float) -> float:
+    """
+    Add two numbers.
+
+    Args:
+        a: First number
+        b: Second number
+
+    Returns:
+        Sum of a and b
+    """
+    # TODO: Implement this function
+    pass
+
+
+def multiply(a: float, b: float) -> float:
+    """
+    Multiply two numbers.
+
+    Args:
+        a: First number
+        b: Second number
+
+    Returns:
+        Product of a and b
+    """
+    # TODO: Implement this function
+    pass
+
+
+def power(base: float, exponent: int) -> float:
+    """
+    Raise base to the power of exponent.
+
+    Args:
+        base: The base number
+        exponent: The exponent
+
+    Returns:
+        base raised to exponent
+    """
+    # TODO: Implement this function
+    pass
+```
+
+::: {.callout-tip}
+## Hints
+
+- For `add()`: Use the `+` operator
+- For `multiply()`: Use the `*` operator
+- For `power()`: Use the `**` operator or `pow()` function
+:::
+
+### Step 1.3: Test Your Functions
+
+Add test code to verify your implementations:
+
+```python
+# Test the functions
+def test_calculator():
+    """Test calculator functions."""
+    print("Testing calculator functions...")
+
+    # Test add
+    result = add(5, 3)
+    print(f"add(5, 3) = {result}")
+    assert result == 8, "add() failed"
+
+    # Test multiply
+    result = multiply(4, 7)
+    print(f"multiply(4, 7) = {result}")
+    assert result == 28, "multiply() failed"
+
+    # Test power
+    result = power(2, 10)
+    print(f"power(2, 10) = {result}")
+    assert result == 1024, "power() failed"
+
+    print("✓ All tests passed!\n")
+
+# Run tests
+test_calculator()
+```
+
+### ✅ Checkpoint 1
+
+Before proceeding, verify:
+
+- [ ] All three functions implemented
+- [ ] All tests pass
+- [ ] No error messages
+- [ ] Output shows "✓ All tests passed!"
+
+**Expected output**:
+```
+Testing calculator functions...
+add(5, 3) = 8
+multiply(4, 7) = 28
+power(2, 10) = 1024
+✓ All tests passed!
+```
+
+---
+
+## Part 2: Data Generation and Analysis
+
+### Step 2.1: Generate Sample Data
+
+Add a function to generate sample data:
+
+```python
+def generate_data(size: int = 100) -> tuple:
+    """
+    Generate sample x and y data for visualization.
+
+    Args:
+        size: Number of data points to generate
+
+    Returns:
+        Tuple of (x_values, y_values) as numpy arrays
+    """
+    # TODO: Generate x values from 0 to 10
+    x = np.linspace(0, 10, size)
+
+    # TODO: Calculate y = sin(x) + random noise
+    y = np.sin(x) + np.random.normal(0, 0.1, size)
+
+    return x, y
+```
+
+::: {.callout-tip}
+## Hints
+
+- Use `np.linspace(start, stop, num)` to create evenly spaced values
+- Use `np.sin()` for sine function
+- Use `np.random.normal(mean, std, size)` for random noise
+:::
+
+### Step 2.2: Calculate Statistics
+
+Add a function to analyze the data:
+
+```python
+def calculate_statistics(data: np.ndarray) -> dict:
+    """
+    Calculate basic statistics for a dataset.
+
+    Args:
+        data: NumPy array of values
+
+    Returns:
+        Dictionary with mean, median, std, min, max
+    """
+    # TODO: Calculate statistics
+    stats = {
+        'mean': np.mean(data),
+        'median': np.median(data),
+        'std': np.std(data),
+        'min': np.min(data),
+        'max': np.max(data)
+    }
+
+    return stats
+```
+
+### Step 2.3: Test Data Functions
+
+```python
+# Generate and analyze data
+x, y = generate_data(100)
+stats = calculate_statistics(y)
+
+print("Data Statistics:")
+for key, value in stats.items():
+    print(f"  {key:6s}: {value:7.4f}")
+```
+
+### ✅ Checkpoint 2
+
+Verify your implementation:
+
+- [ ] Data generated without errors
+- [ ] Statistics calculated correctly
+- [ ] Output shows reasonable values
+
+**Expected output** (values will vary due to random noise):
+```
+Data Statistics:
+  mean  :  0.0234
+  median:  0.0156
+  std   :  0.5432
+  min   : -1.2345
+  max   :  1.3456
+```
+
+---
+
+## Part 3: Data Visualization
+
+### Step 3.1: Create Visualization Function
+
+Add a plotting function:
+
+```python
+def plot_data(x: np.ndarray, y: np.ndarray, stats: dict):
+    """
+    Create a visualization of the data with statistics.
+
+    Args:
+        x: X-axis values
+        y: Y-axis values
+        stats: Dictionary of statistics
+    """
+    plt.figure(figsize=(10, 6))
+
+    # Plot data
+    plt.plot(x, y, 'o-', color='#1a5f7a', alpha=0.6,
+             markersize=4, linewidth=1, label='Data')
+
+    # Plot mean line
+    plt.axhline(stats['mean'], color='#f26b60', linestyle='--',
+                linewidth=2, label=f"Mean: {stats['mean']:.3f}")
+
+    # Labels and title
+    plt.xlabel('X-axis', fontsize=12)
+    plt.ylabel('Y-axis', fontsize=12)
+    plt.title('Sample Data Visualization', fontsize=14, fontweight='bold')
+    plt.legend(loc='upper right')
+    plt.grid(True, alpha=0.3)
+
+    # Add statistics text box
+    stats_text = (f"Statistics:\n"
+                  f"  Mean: {stats['mean']:.3f}\n"
+                  f"  Std:  {stats['std']:.3f}\n"
+                  f"  Min:  {stats['min']:.3f}\n"
+                  f"  Max:  {stats['max']:.3f}")
+
+    plt.text(0.02, 0.98, stats_text,
+             transform=plt.gca().transAxes,
+             fontsize=10,
+             verticalalignment='top',
+             bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.5))
+
+    plt.tight_layout()
+    plt.savefig('lab01_plot.png', dpi=150)
+    plt.show()
+
+    print("✓ Plot saved as 'lab01_plot.png'")
+```
+
+### Step 3.2: Create Complete Analysis
+
+Put it all together:
+
+```python
+def main():
+    """Main function to run complete analysis."""
+    print("Lab 1: Getting Started with Python")
+    print("=" * 50)
+    print()
+
+    # Part 1: Test calculator
+    test_calculator()
+
+    # Part 2: Generate and analyze data
+    print("Generating sample data...")
+    x, y = generate_data(100)
+    print(f"Generated {len(x)} data points\n")
+
+    print("Calculating statistics...")
+    stats = calculate_statistics(y)
+    print("Data Statistics:")
+    for key, value in stats.items():
+        print(f"  {key:6s}: {value:7.4f}")
+    print()
+
+    # Part 3: Visualize
+    print("Creating visualization...")
+    plot_data(x, y, stats)
+    print()
+
+    print("=" * 50)
+    print("Lab 1 completed successfully! ✓")
+
+
+if __name__ == "__main__":
+    main()
+```
+
+### ✅ Final Checkpoint
+
+Your implementation should:
+
+- [ ] Run without errors
+- [ ] Display all expected output
+- [ ] Create and save a plot
+- [ ] Show completion message
+
+---
+
+## Optional Challenge 🌟
+
+::: {.callout-note}
+## Advanced Extension
+
+Enhance your visualization with one or more of these features:
+
+**Challenge 1**: Add confidence interval bands
+- Calculate mean ± 2*std
+- Plot as shaded region using `plt.fill_between()`
+
+**Challenge 2**: Create subplot comparison
+- Generate data with different noise levels
+- Display side-by-side using `plt.subplot()`
+
+**Challenge 3**: Interactive controls
+- Accept command-line arguments for data size
+- Allow user to choose visualization style
+
+**Bonus**: Complete all three challenges for +10 points!
+:::
+
+---
+
+## Submission Requirements
+
+::: {.callout-important}
+## What to Submit
+
+Submit via [your LMS] by [deadline]:
+
+1. **Python script**: `lab01_yourname.py`
+   - All implemented functions
+   - Proper docstrings and type hints
+   - Main function that runs everything
+
+2. **Output file**: `lab01_output.txt`
+   - Copy and paste all console output
+   - Include test results and statistics
+
+3. **Plot image**: `lab01_plot.png`
+   - Generated by your code
+   - Clear and readable
+
+4. **Short report** (optional): `lab01_report.pdf`
+   - What you learned
+   - Challenges encountered
+   - How you solved them
+
+**File naming**: Use your actual name, e.g., `lab01_john_smith.py`
+:::
+
+### Grading Rubric
+
+| Component | Points | Criteria |
+|-----------|--------|----------|
+| Part 1: Functions | 30 | Correct implementation, tests pass |
+| Part 2: Data Analysis | 30 | Data generation and statistics |
+| Part 3: Visualization | 25 | Plot quality and correctness |
+| Code Quality | 10 | Documentation, style, readability |
+| Testing | 5 | Proper test implementation |
+| **Optional Challenge** | +10 | Bonus for advanced features |
+| **Total** | **100** (+10) | |
+
+---
+
+## Lab Questions
+
+Answer these in your report (if required):
+
+**Question 1**: Why is it important to include docstrings in your functions?
+
+**Question 2**: What happens if you change the noise level in `generate_data()`? Try it and describe the effect.
+
+**Question 3**: How could you modify this code to work with different mathematical functions (e.g., cosine, exponential)?
+
+---
+
+## Troubleshooting
+
+### Common Issues
+
+::: {.callout-warning collapse="true"}
+## Error: "ModuleNotFoundError: No module named 'numpy'"
+
+**Cause**: NumPy not installed
+
+**Solution**:
+```bash
+pip install numpy matplotlib
+```
+
+Verify with:
+```bash
+pip list | grep numpy
+```
+:::
+
+::: {.callout-warning collapse="true"}
+## Error: "TypeError: unsupported operand type(s)"
+
+**Cause**: Incorrect data types in calculations
+
+**Solution**:
+- Check that you're using the `+` operator correctly
+- Ensure variables are numeric types
+- Use type hints to catch issues early
+:::
+
+::: {.callout-warning collapse="true"}
+## Plot doesn't appear
+
+**Cause**: Display backend issue
+
+**Solution**:
+- Make sure `plt.show()` is called
+- Try adding `plt.ion()` at the start
+- Check that plot file is saved with `plt.savefig()`
+:::
+
+---
+
+## Additional Resources
+
+### Python Documentation
+- [Python Official Tutorial](https://docs.python.org/3/tutorial/)
+- [NumPy User Guide](https://numpy.org/doc/stable/user/)
+- [Matplotlib Gallery](https://matplotlib.org/stable/gallery/)
+
+### Video Tutorials
+- [Python Functions](https://example.com) - 10 minutes
+- [NumPy Basics](https://example.com) - 15 minutes
+- [Matplotlib Plotting](https://example.com) - 20 minutes
+
+### Related Labs
+- **Lab 2**: Advanced data analysis
+- **Lab 3**: Object-oriented programming
+- **Lab 4**: File handling and data persistence
+
+---
+
+## Reflection
+
+::: {.callout-tip collapse="true"}
+## After Completing This Lab
+
+Reflect on your experience:
+
+- What was easiest to implement?
+- What took the most debugging?
+- How confident do you feel with Python functions?
+- What would you like to practice more?
+
+**Pro tip**: Keep notes for future reference!
+:::
+
+---
+
+**Lab prepared by**: Template Authors
+**Last updated**: December 2025
+**Estimated completion time**: 1-2 hours
+**Difficulty**: ⭐ (Beginner)

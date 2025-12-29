@@ -1,0 +1,25 @@
+%%| Mermaid Flowchart Template
+%%| For algorithm walkthroughs and process flows
+%%| Copy this template and modify as needed
+
+flowchart TD
+    %% Define your nodes
+    Start[Start: Input Parameters] --> Check{Condition Check}
+    Check -->|Yes| Process1[Process Step 1]
+    Check -->|No| Process2[Alternative Step]
+    Process1 --> Compute[Compute Result]
+    Process2 --> Compute
+    Compute --> Validate{Valid?}
+    Validate -->|No| Error[Handle Error]
+    Validate -->|Yes| End[Return Result]
+    Error --> End
+
+    %% Apply consistent styling
+    style Start fill:#1a5f7a,color:#fff,stroke:#1a5f7a,stroke-width:2px
+    style End fill:#1a5f7a,color:#fff,stroke:#1a5f7a,stroke-width:2px
+    style Check fill:#57837b,color:#fff,stroke:#57837b,stroke-width:2px
+    style Validate fill:#57837b,color:#fff,stroke:#57837b,stroke-width:2px
+    style Process1 fill:#c4dfdf,stroke:#1a5f7a,stroke-width:1px
+    style Process2 fill:#c4dfdf,stroke:#1a5f7a,stroke-width:1px
+    style Compute fill:#c4dfdf,stroke:#1a5f7a,stroke-width:1px
+    style Error fill:#dc3545,color:#fff,stroke:#dc3545,stroke-width:2px

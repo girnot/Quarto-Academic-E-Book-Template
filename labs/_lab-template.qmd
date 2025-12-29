@@ -1,0 +1,389 @@
+# Lab X: [Lab Title] {#lab-X}
+
+## Overview
+
+| **Aspect** | **Details** |
+|------------|-------------|
+| **Duration** | 2-3 hours |
+| **Difficulty** | ⭐⭐⭐ (Intermediate) |
+| **Prerequisites** | Chapter X, Lab Y (if applicable) |
+| **CLO Alignment** | CLO-X, CLO-Y |
+| **Submission** | [Files/reports required] |
+| **Due Date** | [Date or relative timing] |
+
+---
+
+## Learning Objectives
+
+By completing this lab, you will be able to:
+
+1. **[Objective 1]** - Specific skill to demonstrate
+2. **[Objective 2]** - Practical ability to develop
+3. **[Objective 3]** - Hands-on experience to gain
+
+---
+
+## Background
+
+### Quick Theory Review
+
+[Brief recap of relevant concepts from the chapter]
+
+**Key Concepts**:
+
+**[Concept 1]**:
+
+Brief explanation relevant to the lab.
+
+**[Concept 2]**:
+
+Brief explanation relevant to the lab.
+
+### Real-World Application
+
+[Explain how this lab connects to real-world scenarios]
+
+---
+
+## Pre-Lab Preparation
+
+::: {.callout-important}
+## Before You Begin
+
+Complete these setup steps before starting the lab:
+
+### Software Requirements
+
+- [ ] Python 3.10+ installed
+- [ ] Required libraries installed
+- [ ] [Additional tools/software]
+
+### Installation
+
+```bash
+# Install required packages
+pip install [package1] [package2] [package3]
+```
+
+### Verify Installation
+
+```python
+# Test imports
+import package1
+import package2
+print("All packages installed successfully!")
+```
+
+### Materials Needed
+
+- [ ] Template files from [location/link]
+- [ ] Sample data from [location/link]
+- [ ] [Any other materials]
+
+**Estimated setup time**: 15-20 minutes
+:::
+
+---
+
+## Part 1: [First Major Task]
+
+### Step 1.1: [Specific Task]
+
+[Clear instructions on what to do]
+
+**What you'll do**:
+- Action 1
+- Action 2
+- Action 3
+
+**Code to implement**:
+
+```python
+# Starter code with TODO comments
+def function_name(parameter):
+    """
+    Description of what this function should do.
+
+    Args:
+        parameter: Description
+
+    Returns:
+        Description
+    """
+    # TODO: Implement this function
+    pass
+
+# Test your implementation
+result = function_name(test_input)
+print(f"Result: {result}")
+```
+
+::: {.callout-tip}
+## Hints
+
+- **Hint 1**: Specific guidance
+- **Hint 2**: Another helpful tip
+- **Hint 3**: Common approach to try
+:::
+
+### Step 1.2: [Next Task]
+
+[Instructions for next step]
+
+```python
+# Continue implementation
+# More code here
+```
+
+### ✅ Checkpoint 1
+
+Before proceeding, verify:
+
+- [ ] Output matches expected result
+- [ ] No error messages
+- [ ] Understanding what the code does
+
+**Expected output**:
+```
+[Show what correct output should look like]
+```
+
+If you see errors, check:
+1. [Common issue 1]
+2. [Common issue 2]
+3. See [Troubleshooting section](#troubleshooting)
+
+---
+
+## Part 2: [Second Major Task]
+
+### Step 2.1: [Task Description]
+
+[Instructions]
+
+```python
+# Implementation code
+```
+
+### Step 2.2: [Continued Task]
+
+::: {.panel-tabset}
+## Approach A
+```python
+# One way to solve
+```
+
+## Approach B
+```python
+# Alternative solution
+```
+
+## Comparison
+Which approach is better for this scenario? Why?
+:::
+
+### ✅ Checkpoint 2
+
+Verify your implementation:
+
+```python
+# Test cases
+assert function(input1) == expected1, "Test 1 failed"
+assert function(input2) == expected2, "Test 2 failed"
+print("All tests passed! ✓")
+```
+
+---
+
+## Part 3: [Final Task/Integration]
+
+### Step 3.1: [Combining Components]
+
+Now put everything together:
+
+```python
+# Complete implementation
+def main():
+    """Main function integrating all parts."""
+    # Part 1 components
+    result1 = part1_function()
+
+    # Part 2 components
+    result2 = part2_function(result1)
+
+    # Final output
+    display_results(result1, result2)
+
+if __name__ == "__main__":
+    main()
+```
+
+### Step 3.2: [Validation]
+
+Test your complete implementation:
+
+```python
+# Comprehensive test
+```
+
+### ✅ Final Checkpoint
+
+Your implementation should:
+
+- [ ] Complete all required tasks
+- [ ] Produce correct output
+- [ ] Handle edge cases
+- [ ] Be well-documented
+- [ ] Follow coding standards
+
+---
+
+## Optional Challenge 🌟
+
+::: {.callout-note}
+## Advanced Extension
+
+For those who finish early or want extra practice:
+
+**Challenge**: [Description of advanced task]
+
+**Hints**:
+- [Advanced hint 1]
+- [Advanced hint 2]
+
+**Bonus**: This challenge relates to [future topic/real-world application]
+:::
+
+---
+
+## Submission Requirements
+
+::: {.callout-important}
+## What to Submit
+
+Submit the following files via [submission platform]:
+
+1. **Python script**: `lab0X_yourname.py`
+   - All implemented functions
+   - Comments explaining your approach
+   - Test cases
+
+2. **Output file**: `lab0X_output.txt`
+   - Copy of console output
+   - Results from all checkpoints
+
+3. **Report** (if required): `lab0X_report.pdf`
+   - Answers to questions
+   - Screenshots of key results
+   - Reflection on challenges
+
+**Naming convention**: Replace X with lab number and yourname with your name.
+
+**Deadline**: [Date and time]
+:::
+
+### Grading Rubric
+
+| Component | Points | Criteria |
+|-----------|--------|----------|
+| Part 1 | 30 | Correctness, code quality |
+| Part 2 | 30 | Functionality, efficiency |
+| Part 3 | 25 | Integration, completeness |
+| Documentation | 10 | Comments, clarity |
+| Style | 5 | PEP 8, readability |
+| **Optional Challenge** | +10 | Bonus points |
+| **Total** | **100** (+10 bonus) |
+
+---
+
+## Lab Questions
+
+Answer these questions in your report:
+
+**Question 1**: [Question about concept understanding]
+
+**Question 2**: [Question about implementation choices]
+
+**Question 3**: [Reflection question about challenges and learning]
+
+---
+
+## Troubleshooting {#troubleshooting}
+
+### Common Issues
+
+::: {.callout-warning collapse="true"}
+## Error: [Common Error Message]
+
+**Cause**: Why this error occurs
+
+**Solution**:
+1. Check [specific thing]
+2. Verify [another thing]
+3. Try [solution approach]
+:::
+
+::: {.callout-warning collapse="true"}
+## Problem: [Common Problem]
+
+**Symptoms**: What you might observe
+
+**Fix**:
+- [Step-by-step fix]
+:::
+
+### Getting Help
+
+If you're stuck:
+
+1. **Re-read instructions**: Did you miss a step?
+2. **Check error messages**: What exactly is failing?
+3. **Review chapter material**: Need concept review?
+4. **Test incrementally**: Isolate the problem
+5. **Ask for help**: Office hours or forum
+
+---
+
+## Additional Resources
+
+### Related Materials
+
+- **Chapter X**: Theoretical foundation
+- **Chapter Y**: Advanced concepts
+- **Appendix Z**: Reference material
+
+### External Resources
+
+1. **[Resource 1]**: Description and link
+2. **[Resource 2]**: Description and link
+3. **[Resource 3]**: Description and link
+
+### Example Projects
+
+Want inspiration? Check out:
+- [Example project 1]
+- [Example project 2]
+
+---
+
+## Reflection
+
+::: {.callout-tip collapse="true"}
+## After Completing This Lab
+
+Take a moment to reflect:
+
+- What was the most challenging part?
+- What did you learn that surprised you?
+- How does this connect to real-world applications?
+- What would you like to explore further?
+
+Document your reflections - they're valuable for learning!
+:::
+
+---
+
+**Lab prepared by**: [Instructor name]
+**Last updated**: [Date]
+**Estimated completion time**: 2-3 hours
+**Difficulty**: ⭐⭐⭐ (Intermediate)

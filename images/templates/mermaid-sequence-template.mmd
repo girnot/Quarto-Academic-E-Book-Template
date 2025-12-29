@@ -1,0 +1,34 @@
+%%| Mermaid Sequence Diagram Template
+%%| For protocol exchanges and interactions
+%%| Copy this template and modify as needed
+
+sequenceDiagram
+    participant Alice
+    participant Server
+    participant Bob
+
+    Note over Alice,Bob: Protocol Name / Phase
+
+    %% Alice's actions
+    Alice->>Alice: Local computation
+    Alice->>Server: Send message A
+
+    %% Server processing
+    Server->>Server: Verify & process
+    Server->>Bob: Forward to Bob
+
+    %% Bob's actions
+    Bob->>Bob: Local computation
+    Bob->>Server: Send message B
+
+    %% Server forwards
+    Server->>Alice: Forward to Alice
+
+    %% Final state
+    Alice->>Alice: Compute final result
+    Bob->>Bob: Compute final result
+
+    Note over Alice,Bob: Both parties achieve shared state
+
+    %% Optional: Show what attacker sees
+    Note right of Server: Attacker sees:<br/>Messages A, B<br/>but cannot compute shared secret

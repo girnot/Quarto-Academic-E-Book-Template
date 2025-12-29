@@ -1,0 +1,183 @@
+# Preface {.unnumbered}
+
+## About This Course
+
+Welcome to **[Your Course Name]**! This course is designed to provide you with both theoretical understanding and practical skills in **[subject area]**.
+
+### Course Philosophy
+
+This course follows the **Outcome-Based Education (OBE)** approach, where:
+
+- **Learning outcomes** drive all instructional decisions
+- **Assessment** directly measures achievement of outcomes
+- **Teaching methods** are chosen to best achieve outcomes
+- **Student success** is defined by demonstrating competencies
+
+### Why This E-Book?
+
+Traditional textbooks often separate theory from practice. This interactive e-book integrates:
+
+::: {.grid}
+::: {.g-col-4}
+**📖 Theory**
+
+Clear explanations with examples
+:::
+::: {.g-col-4}
+**💻 Practice**
+
+Executable code you can modify
+:::
+::: {.g-col-4}
+**✅ Assessment**
+
+Immediate feedback on learning
+:::
+:::
+
+## Flipped Classroom Model
+
+This course uses a **flipped classroom** approach:
+
+### Before Class
+- Watch pre-reading videos
+- Read relevant chapters
+- Complete pre-quizzes
+- Note questions
+
+### During Class
+- Discuss challenging concepts
+- Work on problems collaboratively
+- Get instructor guidance
+- Apply knowledge to scenarios
+
+### After Class
+- Complete laboratory exercises
+- Solve problem sets
+- Work on projects
+- Prepare for assessments
+
+## How to Succeed
+
+::: {.callout-tip icon=false}
+## 🎯 Success Strategies
+
+1. **Stay Consistent**: Don't fall behind - content builds progressively
+2. **Practice Coding**: Run all code examples and modify them
+3. **Ask Questions**: Use office hours and discussion forums
+4. **Form Study Groups**: Collaborate (where permitted)
+5. **Complete Labs**: Hands-on practice is essential
+6. **Use Resources**: Leverage appendices and references
+:::
+
+## Course Learning Outcomes (CLO)
+
+By completing this course, you will achieve the following outcomes:
+
+| CLO | Description | Assessment Methods |
+|-----|-------------|-------------------|
+| **CLO-1** | [Describe first outcome] | Quizzes, Problem Sets |
+| **CLO-2** | [Describe second outcome] | Labs, Project |
+| **CLO-3** | [Describe third outcome] | Midterm, Final Exam |
+| **CLO-4** | [Describe fourth outcome] | Project, Presentation |
+| **CLO-5** | [Describe fifth outcome] | Labs, Portfolio |
+
+## Assessment Overview
+
+Your understanding will be evaluated through:
+
+| Component | Weight | Description |
+|-----------|--------|-------------|
+| **Pre-Quizzes** | 5% | Check preparation before class |
+| **Lab Exercises** | 25% | Hands-on implementation |
+| **Problem Sets** | 15% | Theoretical understanding |
+| **Midterm Exam** | 20% | Mid-course assessment |
+| **Final Project** | 20% | Comprehensive application |
+| **Final Exam** | 15% | Overall mastery |
+
+*(Adjust percentages to match your course)*
+
+## Prerequisites
+
+To succeed in this course, you should have:
+
+- **[Prerequisite 1]**: Description of required background
+- **[Prerequisite 2]**: Description of required skills
+- **[Prerequisite 3]**: Description of required knowledge
+
+If you're uncertain about prerequisites, please consult with the instructor.
+
+## Required Resources
+
+### Software
+- **Python 3.10+**: [https://www.python.org/downloads/](https://www.python.org/downloads/)
+- **Code Editor**: VS Code, PyCharm, or similar
+- **[Additional software specific to your course]**
+
+### Hardware
+- Computer with internet connection
+- **[Any specific hardware requirements]**
+
+### Materials
+- This interactive e-book (primary resource)
+- **[Additional textbooks if any]**
+- **[Other resources]**
+
+## Acknowledgments
+
+This e-book was developed with contributions from:
+
+- **[Lead Author(s)]**: Course design and content
+- **[Contributors]**: Specific contributions
+- **[Reviewers]**: Quality assurance
+- **Student Feedback**: From previous course iterations
+
+### Technology Credits
+- Built with [Quarto](https://quarto.org) publishing system
+- Diagrams created with [Mermaid](https://mermaid.js.org) and Python
+- Hosted on [your hosting platform]
+
+## About the Authors
+
+**[Instructor Name]**
+- **Position**: [Title/Position]
+- **Email**: [email@institution.edu]
+- **Office**: [Location]
+- **Office Hours**: [Schedule]
+- **Research Interests**: [Brief description]
+
+**[Additional instructors/authors as needed]**
+
+## License and Usage
+
+::: {.callout-note}
+## 📜 License
+
+This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
+
+You are free to:
+- **Share**: Copy and redistribute in any medium or format
+- **Adapt**: Remix, transform, and build upon the material
+
+Under these terms:
+- **Attribution**: Give appropriate credit
+- **ShareAlike**: Distribute under same license
+- **No additional restrictions**: Cannot apply legal terms or technological measures that restrict what the license permits
+:::
+
+## Continuous Improvement
+
+This e-book is a living document. We welcome:
+- Bug reports and error corrections
+- Suggestions for improvement
+- Additional examples or exercises
+- Clarification requests
+
+Please report issues via [your reporting mechanism].
+
+---
+
+**We wish you success in your learning journey!**
+
+*[Instructor Name(s)]*
+*[Date]*

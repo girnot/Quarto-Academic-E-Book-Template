@@ -1,0 +1,39 @@
+# Project Guidelines {.unnumbered}
+
+Course projects allow you to apply concepts comprehensively.
+
+## Project Overview
+
+**Purpose**: Demonstrate mastery through practical application
+
+**Weight**: 20% of final grade
+
+**Timeline**: Weeks X-Y
+
+## Requirements
+
+### Minimum Requirements
+
+- [Requirement 1]
+- [Requirement 2]
+- [Requirement 3]
+
+### Deliverables
+
+1. **Code**: Working implementation
+2. **Documentation**: README and comments
+3. **Report**: Analysis and findings
+4. **Presentation**: (if applicable)
+
+## Grading Rubric
+
+| Component | Weight | Criteria |
+|-----------|--------|----------|
+| Implementation | 40% | Functionality and correctness |
+| Documentation | 20% | Clarity and completeness |
+| Analysis | 20% | Depth of understanding |
+| Presentation | 20% | Communication skills |
+
+---
+
+*(Add detailed project specifications here)*

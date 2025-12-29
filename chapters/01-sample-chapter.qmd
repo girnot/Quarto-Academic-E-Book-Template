@@ -1,0 +1,437 @@
+# Introduction to the Course {#sec-intro}
+
+::: {.callout-note}
+## Learning Objectives {.unnumbered}
+
+After completing this chapter, you will be able to:
+
+1. **Understand** the course structure and learning approach
+2. **Identify** key concepts and their real-world applications
+3. **Apply** basic principles through hands-on examples
+
+**Aligned with**: CLO-1
+:::
+
+## Pre-Reading Checklist
+
+::: {.callout-tip collapse="true"}
+## Before You Start
+
+- [ ] Read the preface
+- [ ] Review course syllabus
+- [ ] Complete enrollment survey (if applicable)
+- [ ] Set up development environment
+
+**Estimated time**: 15-20 minutes
+:::
+
+---
+
+## Introduction
+
+Welcome to this interactive e-book! This first chapter introduces the fundamental concepts that form the foundation of the entire course.
+
+### Why This Matters
+
+Understanding these foundational concepts is crucial because:
+
+- They appear repeatedly throughout the course
+- They connect theory to practical applications
+- They provide the mental framework for advanced topics
+
+### Chapter Overview
+
+This chapter covers:
+
+1. **Core Concepts**: Fundamental ideas and definitions
+2. **Practical Examples**: Real-world applications
+3. **Hands-on Practice**: Your first code example
+
+---
+
+## Section 1: Core Concepts
+
+### What is [Your Subject]?
+
+[Your subject] is the study of [brief definition]. It encompasses:
+
+- **Concept 1**: Brief explanation
+- **Concept 2**: Brief explanation
+- **Concept 3**: Brief explanation
+
+::: {.callout-note}
+## Key Concept
+
+**[Important Term]**: A concise definition of a key term that students must understand.
+
+This is fundamental because [explanation of why this matters].
+:::
+
+### Historical Context
+
+Understanding the evolution helps appreciate modern approaches:
+
+```{mermaid}
+%%| label: fig-timeline
+%%| fig-cap: "Evolution of key concepts over time"
+%%| fig-alt: "Timeline showing development from 1960s to present"
+%%| code-fold: true
+%%| code-summary: "Show timeline source"
+
+timeline
+    title Development Timeline
+    1960s : Early Foundations
+         : Theoretical work begins
+    1980s : Practical Applications
+         : First real-world systems
+    2000s : Digital Revolution
+         : Widespread adoption
+    2020s : Modern Era
+         : Current best practices
+```
+
+---
+
+## Section 2: Your First Example
+
+Let's see these concepts in action with a simple example.
+
+### Example 1.1: Hello World
+
+Every journey begins with a first step. Here's your first code example:
+
+```python
+def greet(name):
+    """
+    A simple greeting function.
+
+    Args:
+        name (str): The name to greet
+
+    Returns:
+        str: A personalized greeting message
+    """
+    return f"Hello, {name}! Welcome to the course."
+
+# Try it out
+message = greet("Student")
+print(message)
+```
+
+**Output**:
+```
+Hello, Student! Welcome to the course.
+```
+
+::: {.callout-tip}
+## Try It Yourself
+
+1. Copy this code to your Python environment
+2. Run it with different names
+3. Modify the greeting message
+4. Add error handling for empty names
+:::
+
+### Example 1.2: Working with Data
+
+Let's expand with a more practical example:
+
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Generate sample data
+x = np.linspace(0, 10, 100)
+y = np.sin(x)
+
+# Create visualization
+plt.figure(figsize=(10, 4))
+plt.plot(x, y, color='#1a5f7a', linewidth=2, label='sin(x)')
+plt.xlabel('X-axis')
+plt.ylabel('Y-axis')
+plt.title('Sample Data Visualization')
+plt.grid(True, alpha=0.3)
+plt.legend()
+plt.tight_layout()
+plt.show()
+```
+
+This produces a simple sine wave visualization, demonstrating basic plotting capabilities.
+
+---
+
+## Section 3: Real-World Applications
+
+### Where is This Used?
+
+These concepts appear in many real-world scenarios:
+
+::: {.panel-tabset}
+## Industry Application
+- **Finance**: Risk analysis and modeling
+- **Healthcare**: Patient data analysis
+- **Technology**: Software development
+- **Research**: Scientific computing
+
+## Academic Research
+- Data science projects
+- Computational experiments
+- Thesis work
+- Publications
+
+## Personal Projects
+- Hobby programming
+- Data visualization
+- Automation tasks
+- Learning exercises
+:::
+
+### Case Study: Simple Problem
+
+**Problem**: We need to analyze a dataset and identify patterns.
+
+**Approach**:
+1. Load the data
+2. Clean and prepare
+3. Analyze patterns
+4. Visualize results
+
+```{mermaid}
+%%| label: fig-workflow
+%%| fig-cap: "Typical data analysis workflow"
+%%| fig-alt: "Flowchart showing data loading, processing, analysis, and visualization steps"
+%%| code-fold: true
+%%| code-summary: "Show workflow diagram"
+
+flowchart LR
+    A[Load Data] --> B[Clean Data]
+    B --> C[Process]
+    C --> D{Analysis}
+    D -->|Pattern Found| E[Visualize]
+    D -->|No Pattern| F[Refine Approach]
+    F --> B
+    E --> G[Report Results]
+
+    style A fill:#1a5f7a,color:#fff
+    style G fill:#1a5f7a,color:#fff
+    style D fill:#f26b60,color:#fff
+```
+
+::: {.callout-warning}
+## Common Pitfall
+
+**Don't skip data cleaning!** Many beginners jump straight to analysis, but cleaning is often 80% of the work.
+
+Always:
+- Check for missing values
+- Validate data types
+- Remove duplicates
+- Handle outliers appropriately
+:::
+
+---
+
+## Summary
+
+::: {.callout-important}
+## Key Takeaways
+
+1. **Foundation**: These concepts form the basis for everything else
+2. **Practice**: Hands-on coding is essential for mastery
+3. **Applications**: Real-world relevance keeps learning meaningful
+4. **Workflow**: Follow systematic approaches to solve problems
+:::
+
+### What's Next?
+
+- **Chapter 2**: Builds on these concepts with advanced topics
+- **Lab 1**: Hands-on practice with what you've learned
+- **Assessment**: Pre-quiz for Chapter 2
+
+---
+
+## Self-Check Questions
+
+Test your understanding before moving forward.
+
+::: {.callout-note collapse="true"}
+## Question 1
+
+**What is the primary purpose of [key concept]?**
+
+a) To make things complicated
+b) To provide a systematic approach
+c) To replace human judgment
+d) To slow down the process
+
+**Answer**: b) To provide a systematic approach
+
+**Explanation**: [Key concept] gives us a structured way to approach problems, making solutions more reliable and reproducible.
+:::
+
+::: {.callout-note collapse="true"}
+## Question 2
+
+**Which step in the workflow is most time-consuming?**
+
+a) Loading data
+b) Data cleaning
+c) Analysis
+d) Visualization
+
+**Answer**: b) Data cleaning
+
+**Explanation**: Industry experience shows data cleaning typically takes 70-80% of project time, as real-world data is often messy and incomplete.
+:::
+
+::: {.callout-note collapse="true"}
+## Question 3
+
+**Why is visualization important in data analysis?**
+
+**Sample Answer**: Visualization helps us:
+- Identify patterns humans can spot visually
+- Communicate findings to stakeholders
+- Validate analysis results
+- Detect anomalies or outliers
+:::
+
+---
+
+## Practice Problems
+
+Apply what you've learned with these exercises.
+
+### Problem 1: Modify the Greeting ⭐
+
+**Difficulty**: Beginner
+
+Modify the `greet()` function to:
+- Accept optional time of day (morning, afternoon, evening)
+- Return appropriate greeting based on time
+- Handle missing or invalid inputs gracefully
+
+**Example**:
+```python
+greet("Alice", "morning")  # "Good morning, Alice!"
+greet("Bob", "evening")    # "Good evening, Bob!"
+greet("Charlie")           # "Hello, Charlie!"
+```
+
+::: {.callout-note collapse="true"}
+## Solution
+
+```python
+def greet(name, time_of_day=None):
+    """
+    Generate a time-appropriate greeting.
+
+    Args:
+        name (str): Person to greet
+        time_of_day (str, optional): 'morning', 'afternoon', or 'evening'
+
+    Returns:
+        str: Formatted greeting
+    """
+    if not name:
+        return "Hello there!"
+
+    greetings = {
+        'morning': f"Good morning, {name}!",
+        'afternoon': f"Good afternoon, {name}!",
+        'evening': f"Good evening, {name}!"
+    }
+
+    return greetings.get(time_of_day, f"Hello, {name}!")
+
+# Test
+print(greet("Alice", "morning"))
+print(greet("Bob", "evening"))
+print(greet("Charlie"))
+```
+:::
+
+### Problem 2: Data Analysis ⭐⭐
+
+**Difficulty**: Intermediate
+
+Create a function that:
+1. Generates random sample data
+2. Calculates basic statistics (mean, median, std)
+3. Creates a visualization
+4. Returns a summary dictionary
+
+::: {.callout-note collapse="true"}
+## Solution
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+def analyze_data(size=100, distribution='normal'):
+    """Analyze sample data and visualize results."""
+    # Generate data
+    if distribution == 'normal':
+        data = np.random.normal(0, 1, size)
+    else:
+        data = np.random.uniform(-2, 2, size)
+
+    # Calculate statistics
+    stats = {
+        'mean': np.mean(data),
+        'median': np.median(data),
+        'std': np.std(data),
+        'min': np.min(data),
+        'max': np.max(data)
+    }
+
+    # Visualize
+    plt.figure(figsize=(10, 4))
+    plt.hist(data, bins=20, color='#1a5f7a', alpha=0.7, edgecolor='black')
+    plt.axvline(stats['mean'], color='#f26b60', linestyle='--',
+                linewidth=2, label=f"Mean: {stats['mean']:.2f}")
+    plt.xlabel('Value')
+    plt.ylabel('Frequency')
+    plt.title(f'{distribution.capitalize()} Distribution (n={size})')
+    plt.legend()
+    plt.grid(True, alpha=0.3)
+    plt.tight_layout()
+    plt.show()
+
+    return stats
+
+# Test
+results = analyze_data(size=1000)
+print("Statistics:", results)
+```
+:::
+
+---
+
+## Further Reading
+
+Want to learn more? Check out these resources:
+
+1. **[Resource Name]**: Brief description. [Link if available]
+2. **[Another Resource]**: Brief description. [Link if available]
+3. **[Advanced Topic]**: For those wanting to go deeper. [Link if available]
+
+---
+
+## Next Steps
+
+::: {.callout-tip}
+## Ready to Continue?
+
+- [ ] Completed all self-check questions
+- [ ] Attempted practice problems
+- [ ] Understood key concepts
+- [ ] Ready for [Lab 1](../labs/lab01-sample-lab.qmd)
+- [ ] Proceed to Chapter 2
+:::
+
+---
+
+**Depth Indicator**: ⭐⭐⭐⭐⭐ (Core Mastery Required)
+**CLO Alignment**: CLO-1
+**Estimated Study Time**: 2 hours

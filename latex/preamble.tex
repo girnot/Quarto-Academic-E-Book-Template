@@ -1,0 +1,224 @@
+% Preamble for PDF output of Kriptografi Asimetrik E-Book
+% Custom LaTeX configuration for Quarto
+
+% ============================================
+% PACKAGES
+% ============================================
+
+% Mathematics
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathtools}
+
+% Algorithms and pseudocode
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+% Code listings
+\usepackage{listings}
+\usepackage{fancyvrb}
+
+% Graphics
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows,positioning,calc}
+
+% Tables
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{multirow}
+
+% Colors
+\usepackage{xcolor}
+
+% ============================================
+% COLOR DEFINITIONS (Poltek SSN Theme)
+% ============================================
+
+\definecolor{pssn-primary}{HTML}{1A5F7A}
+\definecolor{pssn-secondary}{HTML}{57837B}
+\definecolor{pssn-accent}{HTML}{C4DFDF}
+\definecolor{code-bg}{HTML}{F8F9FA}
+\definecolor{code-border}{HTML}{E9ECEF}
+
+% ============================================
+% THEOREM ENVIRONMENTS
+% ============================================
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definisi}[chapter]
+\newtheorem{theorem}{Teorema}[chapter]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Korolari}
+\newtheorem{proposition}[theorem]{Proposisi}
+
+\theoremstyle{remark}
+\newtheorem{remark}{Catatan}[chapter]
+\newtheorem{example}{Contoh}[chapter]
+
+% ============================================
+% ALGORITHM STYLING
+% ============================================
+
+\algrenewcommand\algorithmicrequire{\textbf{Input:}}
+\algrenewcommand\algorithmicensure{\textbf{Output:}}
+
+% ============================================
+% CODE LISTING STYLING
+% ============================================
+
+\lstset{
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    frame=single,
+    backgroundcolor=\color{code-bg},
+    rulecolor=\color{code-border},
+    keywordstyle=\color{pssn-primary}\bfseries,
+    commentstyle=\color{pssn-secondary}\itshape,
+    stringstyle=\color{pssn-primary},
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    numbersep=5pt,
+    tabsize=4,
+    showstringspaces=false,
+    captionpos=b
+}
+
+% Python style
+\lstdefinestyle{python}{
+    language=Python,
+    morekeywords={self, True, False, None, as, with, yield, async, await}
+}
+
+% Bash style
+\lstdefinestyle{bash}{
+    language=bash,
+    morekeywords={openssl, python, pip, git, quarto}
+}
+
+% ============================================
+% CUSTOM COMMANDS FOR CRYPTOGRAPHY
+% ============================================
+
+% Mathematical notation
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\E}{\mathcal{E}}
+
+% Modular arithmetic
+\newcommand{\Zn}[1]{\mathbb{Z}_{#1}}
+\newcommand{\Znstar}[1]{\mathbb{Z}_{#1}^{*}}
+\newcommand{\modp}[1]{\pmod{#1}}
+
+% Cryptographic notation
+\newcommand{\Gen}{\mathsf{Gen}}
+\newcommand{\Enc}{\mathsf{Enc}}
+\newcommand{\Dec}{\mathsf{Dec}}
+\newcommand{\Sign}{\mathsf{Sign}}
+\newcommand{\Verify}{\mathsf{Verify}}
+\newcommand{\Hash}{\mathsf{H}}
+
+% Security notation
+\newcommand{\negl}{\mathsf{negl}}
+\newcommand{\poly}{\mathsf{poly}}
+\newcommand{\Adv}{\mathcal{A}}
+\newcommand{\PPT}{\mathsf{PPT}}
+
+% Probability
+\newcommand{\Pr}{\mathbf{Pr}}
+\newcommand{\E}{\mathbf{E}}
+
+% Set notation
+\newcommand{\setof}[1]{\left\{#1\right\}}
+\newcommand{\bits}{\{0,1\}}
+\newcommand{\getsr}{\xleftarrow{\$}}
+
+% Group operations
+\newcommand{\ord}{\mathsf{ord}}
+\newcommand{\gcd}{\mathsf{gcd}}
+\newcommand{\lcm}{\mathsf{lcm}}
+
+% Elliptic curves
+\newcommand{\Ecurve}{\mathcal{E}}
+\newcommand{\Point}{\mathcal{P}}
+\newcommand{\Generator}{\mathcal{G}}
+\newcommand{\Identity}{\mathcal{O}}
+
+% ============================================
+% CALLOUT BOX STYLING
+% ============================================
+
+% Note box
+\newenvironment{notebox}[1][Catatan]{%
+    \begin{tcolorbox}[
+        colback=pssn-accent!10,
+        colframe=pssn-primary,
+        title=#1,
+        fonttitle=\bfseries
+    ]
+}{%
+    \end{tcolorbox}
+}
+
+% Warning box
+\newenvironment{warningbox}[1][Peringatan]{%
+    \begin{tcolorbox}[
+        colback=yellow!10,
+        colframe=orange!80!black,
+        title=#1,
+        fonttitle=\bfseries
+    ]
+}{%
+    \end{tcolorbox}
+}
+
+% Security box
+\newenvironment{securitybox}[1][Keamanan]{%
+    \begin{tcolorbox}[
+        colback=red!5,
+        colframe=red!80!black,
+        title=#1,
+        fonttitle=\bfseries
+    ]
+}{%
+    \end{tcolorbox}
+}
+
+% ============================================
+% PAGE STYLING
+% ============================================
+
+% Header/Footer customization
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[LO]{\nouppercase{\rightmark}}
+\fancyhead[RE]{\nouppercase{\leftmark}}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% Chapter styling
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+    {\normalfont\huge\bfseries\color{pssn-primary}}
+    {\chaptertitlename\ \thechapter}
+    {20pt}
+    {\Huge}
+
+% ============================================
+% HYPERREF SETTINGS
+% ============================================
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=pssn-primary,
+    filecolor=pssn-secondary,
+    urlcolor=pssn-primary,
+    citecolor=pssn-secondary,
+    bookmarksnumbered=true,
+    bookmarksopen=true
+}

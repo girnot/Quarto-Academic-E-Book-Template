@@ -1,0 +1,22 @@
+# Problem Sets {.unnumbered}
+
+Problem sets provide practice applying course concepts.
+
+## Guidelines
+
+- Attempt problems independently first
+- Show all work for partial credit
+- Submit by specified deadlines
+- Consult instructor if stuck
+
+## Sample Problem Set
+
+### Problem Set 1
+
+**Problem 1**: [Description]
+
+**Problem 2**: [Description]
+
+---
+
+*(Add your problem sets here)*

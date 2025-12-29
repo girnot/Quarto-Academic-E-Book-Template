@@ -1,0 +1,46 @@
+# Appendices {.unnumbered}
+
+## Overview
+
+This section contains reference materials to support your learning throughout the course.
+
+## Available Resources
+
+### Quick Reference Materials
+
+**Cheatsheets**: Common commands, syntax, and patterns for quick lookup during coding.
+
+**Glossary**: Definitions of key terms and concepts used throughout the course.
+
+**Standard References**: Important values, constants, and formulas you'll need frequently.
+
+## How to Use Appendices
+
+::: {.callout-tip}
+## Best Practices
+
+- **Bookmark** frequently-used pages
+- **Print** cheatsheets for offline reference
+- **Review** glossary when encountering new terms
+- **Cross-reference** with chapter content
+:::
+
+## Suggestions
+
+These appendices are living documents. If you find:
+- Missing terms that should be defined
+- Useful patterns worth documenting
+- Errors or outdated information
+
+Please let us know so we can improve them!
+
+---
+
+**Explore the reference materials:**
+
+*(Add links to your appendix files as you create them)*
+
+- Mathematical References
+- Programming Cheatsheets
+- Glossary of Terms
+- Additional Resources
