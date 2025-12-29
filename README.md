@@ -89,6 +89,11 @@ quarto preview
 Your e-book will open in browser at `http://localhost:4200`
 
 ---
+## 📚 Sample Output
+
+![Sample E-Book Output](images/sample_page.PNG)
+
+---
 
 ## 📁 Project Structure
 
